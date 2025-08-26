@@ -4,7 +4,36 @@ import Link from "next/link";
 export default function Navbar() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur">
-            nav
+            <div className="container mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
+                <Link href="/" className="text-xl font-bold tracking-tight">
+                    <span className="rounded-md bg-primary px-2 py-1 text-background">
+                        vi
+                    </span>
+                </Link>
+
+                <nav className="hidden gap-6 sm:flex">
+                    <Link
+                        href="/projects"
+                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        Projects
+                    </Link>
+                    <Link
+                        href="/blog"
+                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        Blog
+                    </Link>
+                    <Link
+                        href="/contact"
+                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                        Contact
+                    </Link>
+                </nav>
+
+                <ThemeToggle />
+            </div>
         </header>
     )
 }
