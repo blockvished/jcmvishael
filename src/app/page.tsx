@@ -1,18 +1,18 @@
+import Intro from "@/components/intro";
+
 export default function Home() {
   return (
     <>
       <div className="">
+        <Intro />
         <p>
-          Intro with image
+          recent 2 projects and skills
         </p>
         <p>
-          projects and skills
+          recent 2 blogs with page
         </p>
         <p>
-          blogs with page
-        </p>
-        <p>
-          contact with page
+          contact with page action
         </p>
       </div>
     </>
