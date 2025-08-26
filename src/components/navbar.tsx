@@ -11,28 +11,31 @@ export default function Navbar() {
                     </span>
                 </Link>
 
-                <nav className="hidden gap-6 sm:flex">
-                    <Link
-                        href="/projects"
-                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                        Projects
-                    </Link>
-                    <Link
-                        href="/blog"
-                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                        Blog
-                    </Link>
-                    <Link
-                        href="/contact"
-                        className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                        Contact
-                    </Link>
-                </nav>
+                <div className="flex items-center gap-4 sm:gap-6">
+                    <nav className="flex gap-4 sm:gap-6">
+                        <Link
+                            href="/projects"
+                            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Projects
+                        </Link>
+                        <Link
+                            href="/blog"
+                            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Blog
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+                        >
+                            Contact
+                        </Link>
+                    </nav>
 
-                <ThemeToggle />
+                    <ThemeToggle />
+
+                </div>
             </div>
         </header>
     )
