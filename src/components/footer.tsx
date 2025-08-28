@@ -1,5 +1,6 @@
 import React from "react";
-import { navigation } from "@/lib/navlinks";
+import { navigation } from "@/lib/findme";
+import { Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -21,6 +22,9 @@ export default function Footer() {
                 <item.icon aria-hidden="true" className="h-5 w-5" />
               </a>
             ))}
+            <a href="mailto:jcmvishael@gmail.com" aria-label="Email">
+              <Mail size={24} />
+            </a>
           </div>
 
           {/* Copyright */}

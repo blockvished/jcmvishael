@@ -2,7 +2,7 @@ import Blogs from "@/components/blogs";
 import Container from "@/components/container";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
-import Contact from "@/components/contact";
+import FindMe from "@/components/findme";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Blogs />
       </Container>
       <Container>
-        <Contact />
+        <FindMe />
       </Container>
     </div>
   );
