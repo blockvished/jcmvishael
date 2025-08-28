@@ -1,13 +1,14 @@
 import React from "react";
 import { navigation } from "@/lib/findme";
 import { Mail } from "lucide-react";
+import Social from "./socials";
 
 export default function Footer() {
   return (
     <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
       <div className="container mx-auto max-w-3xl px-4 py-4">
         <div className="md:flex md:items-center md:justify-between">
-          {/* Social links */}
+          {/*<Social />*/}
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item, index) => (
               <a
@@ -27,7 +28,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Copyright */}
           <div className="mt-8 md:order-1 md:mt-0">
             <p className="text-center text-xs leading-5 text-muted-foreground">
               Built in &copy; {new Date().getFullYear()}
