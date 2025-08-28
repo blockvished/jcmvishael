@@ -1,24 +1,24 @@
+import Blogs from "@/components/blogs";
+import Container from "@/components/container";
 import Intro from "@/components/intro";
+import Projects from "@/components/projects";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <>
-      <div className="">
+    <div>
+      <Container>
         <Intro />
-        <p>
-          recent 2 projects and skills
-        </p>
-        <p>
-          recent 2 blogs with page
-        </p>
-        <p>
-          contact with page action
-        </p>
-      </div>
-    </>
+      </Container>
+      <Container>
+        <Projects />
+      </Container>
+      <Container>
+        <Blogs />
+      </Container>
+      <Container>
+        <Contact />
+      </Container>
+    </div>
   );
 }
-
-
-
-
