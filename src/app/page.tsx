@@ -3,6 +3,7 @@ import Container from "@/components/container";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import FindMe from "@/components/findme";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <Blogs />
       </Container>
       <Container>
-        <FindMe />
+        <FindMe isButton={true} />
       </Container>
     </div>
   );
